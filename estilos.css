@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    color: #23272f;
+    transition: all 1s ease;
+}
+
+.darkContainer {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: #23272f;
+    color: #fff;
+    transition: all 1s ease;
+}
+
+.switch {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    transition: all .5s ease;
+
+}
+
+.darkSwitch {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    box-shadow: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #2d323b;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.circle::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f186";
+    color: #23272f;
+    font-size: 1.5rem;
+}
+
+.darkCircle {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.darkCircle::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f185";
+    color: white;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+p {
+    width: 70%;
+    text-align: center;
+    letter-spacing: 3px;
+}
